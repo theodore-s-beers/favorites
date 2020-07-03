@@ -1,7 +1,7 @@
 ---
-title: "Exiting the Vampire Castle"
-author: "Mark Fisher"
-lang: "en"
+title: Exiting the Vampire Castle
+author: Mark Fisher
+lang: en
 ---
 
 ### Mark Fisher
