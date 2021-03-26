@@ -2,20 +2,20 @@
 
 :root {
   --bg-color: #fff;
+  --florette-color: #a61212;
   --font-color: #282828;
   --link-color: #00e;
-  --slider-circle-color: #fff;
   --slider-bg-color: #ccc;
-  --florette-color: #a61212;
+  --slider-circle-color: #fff;
 }
 
 [data-theme="dark"] {
   --bg-color: #26282a;
+  --florette-color: #fcaaaa;
   --font-color: #e6e6e6;
   --link-color: #eab499;
-  --slider-circle-color: #e6e6e6;
   --slider-bg-color: #eab499;
-  --florette-color: #fcaaaa;
+  --slider-circle-color: #e6e6e6;
 }
 
 /* Styles for content */
@@ -24,13 +24,14 @@ body {
   background-color: var(--bg-color);
   color: var(--font-color);
   font-family: Merriweather, serif;
-  max-width: 68ch;
-  padding: 2ch;
   margin: auto;
+  max-width: 80ch;
+  padding: 2ch;
 }
 
 li,
 p {
+  hyphens: auto;
   line-height: 1.5;
 }
 
@@ -45,9 +46,9 @@ a:active {
 }
 
 sup {
-  vertical-align: baseline;
   position: relative;
   top: -0.4em;
+  vertical-align: baseline;
 }
 
 .author {
@@ -61,8 +62,8 @@ sup {
 .footer {
   display: flex;
   justify-content: center;
-  margin-top: 1.8rem;
   margin-bottom: 0;
+  margin-top: 1.8rem;
 }
 
 .footnote-back {
