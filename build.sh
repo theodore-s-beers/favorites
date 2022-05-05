@@ -2,10 +2,10 @@
 
 set -Eeuo pipefail
 
-sort-package-json && npm install &&
+sort-package-json && pnpm i &&
 	fd index.html -x rm {} &&
-	npm run prettify-all &&
-	npm run lint &&
+	dum prettify-all &&
+	dum lint &&
 	pandoc index-0.md \
 		-f markdown-auto_identifiers \
 		-M document-css=false \
@@ -26,8 +26,8 @@ sort-package-json && npm install &&
 		-A components/footer.html \
 		-A components/script-link.html \
 		-o '{.}'.html &&
-	npm run minify-html &&
+	dum minify-html &&
 	fd index.html -x sd '<style>.*</style>' '' {} &&
 	fd index.html \
 		-x sd 'a href="http' 'a target="_blank" rel="noopener" href="http' {} &&
-	npm run prettify-html
+	dum prettify-html
