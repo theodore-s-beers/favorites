@@ -21,10 +21,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "eslint": "^8.14.0",
+    "eslint": "^8.17.0",
     "html-minifier": "^4.0.0",
     "prettier": "^2.6.2",
-    "stylelint": "^14.8.2",
-    "stylelint-config-standard": "^25.0.0"
+    "stylelint": "^14.9.1",
+    "stylelint-config-standard": "^26.0.0"
   }
 }
