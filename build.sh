@@ -2,10 +2,12 @@
 
 set -Eeuo pipefail
 
-sort-package-json && pnpm i &&
+# Must be in PATH: pnpm, fd, pandoc, sd
+
+pnpm i && pnpm run sort-manifest &&
 	fd index.html -x rm {} &&
-	dum prettify-all &&
-	dum lint &&
+	pnpm run prettify-all &&
+	pnpm run lint &&
 	pandoc index-0.md \
 		-f markdown-auto_identifiers \
 		-M document-css=false \
@@ -26,8 +28,8 @@ sort-package-json && pnpm i &&
 		-A components/footer.html \
 		-A components/script-link.html \
 		-o '{.}'.html &&
-	dum minify-html &&
+	pnpm run minify-html &&
 	fd index.html -x sd '<style>.*</style>' '' {} &&
 	fd index.html \
 		-x sd 'a href="http' 'a target="_blank" rel="noopener" href="http' {} &&
-	dum prettify-html
+	pnpm run prettify-html
