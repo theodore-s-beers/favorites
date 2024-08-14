@@ -9,7 +9,7 @@
   --slider-circle-color: #fff;
 }
 
-[data-theme='dark'] {
+[data-theme="dark"] {
   --bg-color: #26282a;
   --florette-color: #fcaaaa;
   --font-color: #e6e6e6;
@@ -92,7 +92,7 @@ sup {
 }
 
 #body-text sup {
-  font-family: 'Noto Serif', Merriweather, serif;
+  font-family: "Noto Serif", Merriweather, serif;
 }
 
 #notes {
@@ -112,7 +112,7 @@ sup {
 .slider::before {
   background-color: var(--slider-circle-color);
   bottom: 4px;
-  content: '';
+  content: "";
   height: 26px;
   left: 4px;
   position: absolute;
