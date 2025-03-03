@@ -23,12 +23,12 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "@eslint/js": "^9.19.0",
-    "eslint": "^9.19.0",
+    "@eslint/js": "^9.21.0",
+    "eslint": "^9.21.0",
     "html-minifier": "^4.0.0",
-    "prettier": "^3.4.2",
-    "sort-package-json": "^2.14.0",
-    "stylelint": "^16.14.1",
+    "prettier": "^3.5.3",
+    "sort-package-json": "^2.15.1",
+    "stylelint": "^16.15.0",
     "stylelint-config-standard": "^37.0.0"
   }
 }
