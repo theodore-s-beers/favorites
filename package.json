@@ -16,7 +16,7 @@
   "main": "index.html",
   "scripts": {
     "lint": "eslint --fix . && stylelint --fix styles.css",
-    "minify-html": "fd index.html -x html-minifier {} --collapse-whitespace --minify-css true --remove-comments -o {}",
+    "minify-html": "fd index.html -x html-minifier-next {} --collapse-whitespace --minify-css true --remove-comments -o {}",
     "prettify-all": "prettier --write .",
     "prettify-html": "fd index.html -x prettier --write {}",
     "sort-manifest": "sort-package-json",
@@ -25,7 +25,7 @@
   "devDependencies": {
     "@eslint/js": "^9.32.0",
     "eslint": "^9.32.0",
-    "html-minifier": "^4.0.0",
+    "html-minifier-next": "^1.1.5",
     "prettier": "^3.6.2",
     "sort-package-json": "^3.4.0",
     "stylelint": "^16.23.0",
