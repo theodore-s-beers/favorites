@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 
-set -Eeuo pipefail
+set -euo pipefail
 
 # Must be in PATH: pnpm, fd, pandoc, sd
 

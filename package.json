@@ -1,11 +1,8 @@
 {
   "name": "favorites",
   "version": "0.1.0",
-  "description": "",
+  "description": "A place to mirror favorite essays",
   "homepage": "https://github.com/theodore-s-beers/favorites#readme",
-  "bugs": {
-    "url": "https://github.com/theodore-s-beers/favorites/issues"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/theodore-s-beers/favorites.git"
@@ -16,19 +13,19 @@
   "main": "index.html",
   "scripts": {
     "lint": "eslint --fix . && stylelint --fix styles.css",
-    "minify-html": "fd index.html -x html-minifier-next {} --collapse-whitespace --minify-css true --remove-comments -o {}",
+    "minify-html": "fd -e html ^index -x html-minifier-next --config-file html-minifier.json {} -o {}",
     "prettify-all": "prettier --write .",
-    "prettify-html": "fd index.html -x prettier --write {}",
+    "prettify-html": "prettier --write '**/index.html'",
     "sort-manifest": "sort-package-json",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo 'Error: no test specified' && exit 1"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
-    "eslint": "^10.2.1",
-    "html-minifier-next": "^6.2.0",
+    "eslint": "^10.4.1",
+    "html-minifier-next": "^6.2.7",
     "prettier": "^3.8.3",
     "sort-package-json": "^3.6.1",
-    "stylelint": "^17.9.1",
+    "stylelint": "^17.12.0",
     "stylelint-config-standard": "^40.0.0"
   }
 }
