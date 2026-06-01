@@ -16,7 +16,7 @@ importers:
         version: 10.2.1
       html-minifier-next:
         specifier: ^6.2.0
-        version: 6.2.0
+        version: 6.2.7
       prettier:
         specifier: ^3.8.3
         version: 3.8.3
@@ -523,8 +523,8 @@ packages:
   hookified@2.2.0:
     resolution: {integrity: sha512-p/LgFzRN5FeoD3DLS6bkUapeye6E4SI6yJs6KetENd18S+FBthqYq2amJUWpt5z0EQwwHemidjY5OqJGEKm5uA==}
 
-  html-minifier-next@6.2.0:
-    resolution: {integrity: sha512-cX3WG64N6Gb414oKqOQscA/xpAKVyykB6CHODgEmvG5ZkCWcTb6C12HIziEcj/Q1qmb5iLjLxxV8bBCd1HQADg==}
+  html-minifier-next@6.2.7:
+    resolution: {integrity: sha512-DKvbAkZTNbaQf3OoYA65jgqiy+Yim8tKbBCt3ma1RvpjNUQJS1yeZKRs5epRmF0I+oGukBVSd/tc8vZ1UT4KaA==}
     hasBin: true
     peerDependencies:
       '@swc/core': ^1.15.7
@@ -663,28 +663,24 @@ packages:
     engines: {node: '>= 12.0.0'}
     cpu: [arm64]
     os: [linux]
-    libc: [glibc]
 
   lightningcss-linux-arm64-musl@1.32.0:
     resolution: {integrity: sha512-UpQkoenr4UJEzgVIYpI80lDFvRmPVg6oqboNHfoH4CQIfNA+HOrZ7Mo7KZP02dC6LjghPQJeBsvXhJod/wnIBg==}
     engines: {node: '>= 12.0.0'}
     cpu: [arm64]
     os: [linux]
-    libc: [musl]
 
   lightningcss-linux-x64-gnu@1.32.0:
     resolution: {integrity: sha512-V7Qr52IhZmdKPVr+Vtw8o+WLsQJYCTd8loIfpDaMRWGUZfBOYEJeyJIkqGIDMZPwPx24pUMfwSxxI8phr/MbOA==}
     engines: {node: '>= 12.0.0'}
     cpu: [x64]
     os: [linux]
-    libc: [glibc]
 
   lightningcss-linux-x64-musl@1.32.0:
     resolution: {integrity: sha512-bYcLp+Vb0awsiXg/80uCRezCYHNg1/l3mt0gzHnWV9XP1W5sKa5/TCdGWaR/zBM2PeF/HbsQv/j2URNOiVuxWg==}
     engines: {node: '>= 12.0.0'}
     cpu: [x64]
     os: [linux]
-    libc: [musl]
 
   lightningcss-win32-arm64-msvc@1.32.0:
     resolution: {integrity: sha512-8SbC8BR40pS6baCM8sbtYDSwEVQd4JlFTOlaD3gWGHfThTcABnNDBda6eTZeqbofalIJhFx0qKzgHJmcPTnGdw==}
@@ -947,8 +943,8 @@ packages:
     resolution: {integrity: sha512-9kY+CygyYM6j02t5YFHbNz2FN5QmYGv9zAjVp4lCDjlCw7amdckXlEt/bjMhUIfj4ThGRE4gCUH5+yGnNuPo5A==}
     engines: {node: '>=10.0.0'}
 
-  terser@5.46.2:
-    resolution: {integrity: sha512-uxfo9fPcSgLDYob/w1FuL0c99MWiJDnv+5qXSQc5+Ki5NjVNsYi66INnMFBjf6uFz6OnX12piJQPF4IpjJTNTw==}
+  terser@5.48.0:
+    resolution: {integrity: sha512-J/9An6vs9Us6wKRriSFXBWdRZapREHqFzdNUKk0pmu804EMR6dr6winwo7e5JDxN4xahxQsuysyYFwlwj4XN/Q==}
     engines: {node: '>=10'}
     hasBin: true
 
@@ -1460,13 +1456,13 @@ snapshots:
 
   hookified@2.2.0: {}
 
-  html-minifier-next@6.2.0:
+  html-minifier-next@6.2.7:
     dependencies:
       commander: 14.0.3
       entities: 8.0.0
       lightningcss: 1.32.0
       svgo: 4.0.1
-      terser: 5.46.2
+      terser: 5.48.0
 
   html-tags@5.1.0: {}
 
@@ -1839,7 +1835,7 @@ snapshots:
       string-width: 4.2.3
       strip-ansi: 6.0.1
 
-  terser@5.46.2:
+  terser@5.48.0:
     dependencies:
       '@jridgewell/source-map': 0.3.11
       acorn: 8.16.0
