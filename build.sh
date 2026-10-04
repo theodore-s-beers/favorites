@@ -9,7 +9,7 @@ pnpm run sort-manifest
 
 fd index.html -x rm {}
 
-pnpm run prettify-all
+pnpm run format
 pnpm run lint
 
 pandoc index-0.md \
@@ -40,4 +40,4 @@ fd index.html -x sd '<style>.*</style>' '' {}
 fd index.html \
 	-x sd 'a href="http' 'a target="_blank" rel="noopener" href="http' {}
 
-pnpm run prettify-html
+pnpm run format:html
