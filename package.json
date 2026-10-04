@@ -15,6 +15,7 @@
     "format": "oxfmt --write",
     "format:check": "oxfmt --check",
     "format:html": "oxfmt --write '**/index.html'",
+    "knip": "knip",
     "lint": "pnpm format:check && oxlint",
     "minify-html": "fd -e html ^index -x html-minifier-next --config-file html-minifier.json {} -o {}",
     "sort-manifest": "sort-package-json",
@@ -22,6 +23,7 @@
   },
   "devDependencies": {
     "html-minifier-next": "^8.10.2",
+    "knip": "^6.39.0",
     "oxfmt": "^0.71.0",
     "oxlint": "^1.86.0",
     "sort-package-json": "^4.0.0"
